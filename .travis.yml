@@ -1,16 +1,30 @@
-branches:
-  only:
-    - master
 language: node_js
-matrix:
-  include:
-    - node_js: 13.x
-  allow_failures:
-    - node_js: tip
+os:
+  - windows
+  - linux
+  - osx
 
-git:
-  depth:
-    1
+node_js:
+  - "node"
+  - 13
+matrix:
+## An ENOMEM error occurs with 10+ under Travis-CI for Windows.
+## Disable until we can determine the cause.
+  # include:
+    # - node_js: 13.x
+  # allow_failures:
+  #   - node_js: tip
+  exclude:
+    - os: windows
+      node_js: "node"
+    - os: windows
+      node_js: 13
+# branches:
+#   only:
+#     - master
+# git:
+#   depth:
+#     1
 
 install:
   - npm install && npm ci
