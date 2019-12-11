@@ -25,13 +25,16 @@ matrix:
 # git:
 #   depth:
 #     1
-
-# install:
-#   - npm install && npm ci
-  # keep the npm cache around to speed up installs
-  # cache:
-  #   directories:
+cache:
+  npm: false
+  # directories:
   #   - "$HOME/.npm"
+before_install:
+  - npm install
+install:
+  - npm ci
+  # keep the npm cache around to speed up installs
+# before_script:
 
 # after_success:
 #   - bash <(curl -s https://codecov.io/bash) -f coverage/coverage.json
