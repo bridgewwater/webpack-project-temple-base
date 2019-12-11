@@ -1,6 +1,11 @@
 ## node-ci
 
-coverage/coverage.json
+.nyc_output
+.self_coverage
+self-coverage/
+*.swp
+needs-transpile.js
+coverage/
 
 ## node
 

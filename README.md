@@ -5,6 +5,8 @@
 
 this is project of webpack
 
+test use https://github.com/istanbuljs/nyc just in develop
+
 # version
 
 | item    | verison | desc |
