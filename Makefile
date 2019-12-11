@@ -28,5 +28,8 @@ prune:
 buildX:
 	npx webpack --config webpack.config.js
 
+travisTest:
+	npm test
+
 dev:
 	npm run build -- --config webpack.config.js
