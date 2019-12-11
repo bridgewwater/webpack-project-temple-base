@@ -16,7 +16,10 @@ init:
 	npm fund
 
 depends:
-	npm fund
+	npm list
+
+prune:
+	npm prune
 
 buildX:
 	npx webpack --config webpack.config.js

@@ -1,3 +1,6 @@
+[![TravisBuildStatus](https://api.travis-ci.org/bridgewwater/webpack-project-temple-base.svg?branch=master)](https://travis-ci.org/bridgewwater/webpack-project-temple-base)
+[![codecov](https://codecov.io/gh/bridgewwater/webpack-project-temple-base/branch/master/graph/badge.svg)](https://codecov.io/gh/bridgewwater/webpack-project-temple-base)
+
 # webpack-project-temple-base
 
 this is project of webpack
@@ -7,7 +10,7 @@ this is project of webpack
 | item    | verison | desc |
 |:--------|:--------|:-----|
 | node    | 8.2+    | SDK  |
-| npm     | 5.1+    | tools |
+| npm     | 6.9+    | tools |
 | webpack | 4.41.2+ | |
 
 
