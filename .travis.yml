@@ -19,5 +19,5 @@ install:
     directories:
     - "$HOME/.npm"
 
-after_success:
-  - bash <(curl -s https://codecov.io/bash) -f coverage/coverage.json
+# after_success:
+#   - bash <(curl -s https://codecov.io/bash) -f coverage/coverage.json
