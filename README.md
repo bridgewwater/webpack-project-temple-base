@@ -9,8 +9,8 @@ this is project of webpack
 
 | item    | verison | desc |
 |:--------|:--------|:-----|
-| node    | 8.2+    | SDK  |
-| npm     | 6.9+    | tools |
+| node    | 13.+    | SDK  |
+| npm     | 6.+    | tools |
 | webpack | 4.41.2+ | |
 
 

@@ -13,6 +13,10 @@ init:
 	node -v
 	npm -v
 	npm i
+	@echo "=> this proejct need http://karma-runner.github.io/"
+	@echo "if error please install: npm install -g karma"
+	@echo ""
+	karma --version
 	npm fund
 
 depends:
