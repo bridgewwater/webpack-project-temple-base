@@ -11,6 +11,9 @@ DIST_VERSION := v1.0.0
 dev:
 	npm run build -- --config webpack.config.js
 
+watch:
+	npm run watch -- --config webpack.config.js
+
 init:
 	@echo "check out runtime"
 	node -v
@@ -40,6 +43,7 @@ helpRoot:
 	@echo "make prune       -> prune project"
 	@echo "make buildX      -> use npx to build this project"
 	@echo "make dev         -> run dev use as npm run by args"
+	@echo "make watch       -> run dev use as npm watch by args"
 	@echo ""
 
 help: helpRoot
