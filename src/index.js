@@ -6,6 +6,8 @@ import DataXML from "./data/data.xml";
 // not use  import { DataJson } from "./data/data.json";
 import DataJson from "./data/data.json";
 
+import printMe from './print.js'
+
 function component() {
   var element = document.createElement("div");
 
@@ -22,6 +24,12 @@ function component() {
   // load data
   console.log("DataXML", DataXML);
   console.log("DataJson", DataJson);
+
+  // Output Management
+  const btn = document.createElement('button');
+  btn.innerHTML = 'Click me and check the console!';
+  btn.onclick = printMe;
+  element.appendChild(btn);
 
   return element;
 }
