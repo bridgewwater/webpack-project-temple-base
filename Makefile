@@ -9,6 +9,9 @@ TOP_DIR := $(shell pwd)
 DIST_VERSION := v1.0.0
 
 dev:
+	npm run start -- --config webpack.config.js
+
+build:
 	npm run build -- --config webpack.config.js
 
 watch:
@@ -42,8 +45,9 @@ helpRoot:
 	@echo "make listDepends -> list dependencise of this project"
 	@echo "make prune       -> prune project"
 	@echo "make buildX      -> use npx to build this project"
-	@echo "make dev         -> run dev use as npm run by args"
+	@echo "make build       -> run dev use as npm run by args"
 	@echo "make watch       -> run dev use as npm watch by args"
+	@echo "make dev         -> run dev as sevices"
 	@echo ""
 
 help: helpRoot
