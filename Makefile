@@ -22,7 +22,7 @@ init:
 	karma --version
 	npm fund
 
-depends:
+listDepends:
 	npm list
 
 prune:
@@ -35,11 +35,11 @@ travisTest:
 	npm test
 
 helpRoot:
-	@echo "make init    -> init project and check this project evn"
-	@echo "make depends -> list dependencise of this project"
-	@echo "make prune   -> prune project"
-	@echo "make buildX  -> use npx to build this project"
-	@echo "make dev     -> run dev use as npm run by args"
+	@echo "make init        -> init project and check this project evn"
+	@echo "make listDepends -> list dependencise of this project"
+	@echo "make prune       -> prune project"
+	@echo "make buildX      -> use npx to build this project"
+	@echo "make dev         -> run dev use as npm run by args"
 	@echo ""
 
 help: helpRoot

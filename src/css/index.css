@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'webfont';
+  src: url('../fonts/webfont.woff2') format('woff2'),
+    url('../fonts/webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+.hello {
+  color: red;
+  font-family: 'webfont';
+  background: url('../img/ic_sinlov.jpg');
+}
