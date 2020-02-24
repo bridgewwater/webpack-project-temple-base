@@ -8,6 +8,9 @@ TOP_DIR := $(shell pwd)
 
 DIST_VERSION := v1.0.0
 
+dev:
+	npm run build -- --config webpack.config.js
+
 init:
 	@echo "check out runtime"
 	node -v
@@ -31,5 +34,13 @@ buildX:
 travisTest:
 	npm test
 
-dev:
-	npm run build -- --config webpack.config.js
+helpRoot:
+	@echo "make init    -> init project and check this project evn"
+	@echo "make depends -> list dependencise of this project"
+	@echo "make prune   -> prune project"
+	@echo "make buildX  -> use npx to build this project"
+	@echo "make dev     -> run dev use as npm run by args"
+	@echo ""
+
+help: helpRoot
+	@echo "more info see makefile"
